@@ -1,7 +1,7 @@
 {
 	"name": "react-refresh",
 	"version": "0.1.0",
-	"private": true,
+	"private": false,
 	"homepage": "http://liinabakhoff.github.io/nort-hikes_react-refresher",
 	"dependencies": {
 		"bootstrap": "^5.2.3",
