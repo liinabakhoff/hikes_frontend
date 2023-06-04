@@ -10,16 +10,15 @@ function App() {
 	const [hikes, setHikes] = useState([])
 
 	useEffect(() => {
-		fetch('http://localhost:8000')
+		fetch('http://localhost:10000/api/treks')
 			.then((response) => {
 				return response.json()
 			})
 			.then((data) => {
-				// handle the response
-				setHikes([...data])
+				console.log('response', data)
+				setHikes(data)
 			})
 			.catch(() => {
-				// handle the error
 				console.log('fail')
 			})
 	}, [])

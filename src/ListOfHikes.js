@@ -11,21 +11,19 @@ function ListOfHikes({ hikes }) {
 					return (
 						<Col key={index}>
 							<Card>
-								<Card.Img variant='top' src={hike.images[0].url} />
+								<Card.Img variant='top' src={hike.image_url} />
 								<Card.Body>
 									<Card.Title>
-										{hike.title}, {hike.lengthKm}km
+										{hike.name}
 										<br />
-										{hike.date}
+										{hike.start_time} - {hike.end_time}
 									</Card.Title>
 
 									<Card.Text>
-										Lat {hike.lat} Long {hike.long} <br />
-										{hike.county}
+										Lat {hike.latitude} Long {hike.longitude}
 									</Card.Text>
 									<Card.Text>{hike.description}</Card.Text>
-									<Card.Text>Matkajuht: {hike.coordinator}</Card.Text>
-									<Card.Text>Osalus: {hike.priceEur}€</Card.Text>
+									<Card.Text>Osalus: {hike.price}€</Card.Text>
 								</Card.Body>
 							</Card>
 						</Col>

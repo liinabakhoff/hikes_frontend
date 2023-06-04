@@ -8,7 +8,7 @@ const hikes = [
 		title: 'Elistvere õpperada',
 		county: 'Tartumaa',
 		coordinator: 'Eva Luigas',
-		date: '31.05.2023',
+		startTime: new Date(2023, 4, 27, 10, 0, 0),
 		priceEur: 3,
 		images: [
 			{
@@ -77,7 +77,7 @@ const hikes = [
 		title: 'Jussi loodusrada',
 		county: 'Harjumaa',
 		coordinator: 'Teet Margna',
-		date: '03.06.2023',
+		startTime: new Date(2023, 5, 27, 10, 0, 0),
 		priceEur: 2,
 		images: [
 			{
@@ -153,7 +153,7 @@ const hikes = [
 		title: 'Mukri loodusrada',
 		county: 'Raplamaa',
 		coordinator: 'Hans H. Luik',
-		date: '21.06.2023',
+		startTime: new Date(2023, 4, 27, 10, 0, 0),
 		priceEur: 2,
 		images: [
 			{
