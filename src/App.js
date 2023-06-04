@@ -6,11 +6,13 @@ import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import ListOfHikes from './ListOfHikes'
 
+const url = 'https://liina-matkad-app.onrender.com/api/treks'
+
 function App() {
 	const [hikes, setHikes] = useState([])
 
 	useEffect(() => {
-		fetch('http://localhost:10000/api/treks')
+		fetch(url)
 			.then((response) => {
 				return response.json()
 			})
