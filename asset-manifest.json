@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/nort-hikes_react-refresher/static/css/main.44f8b8b5.css",
-    "main.js": "/nort-hikes_react-refresher/static/js/main.713db66a.js",
-    "index.html": "/nort-hikes_react-refresher/index.html",
-    "main.44f8b8b5.css.map": "/nort-hikes_react-refresher/static/css/main.44f8b8b5.css.map",
-    "main.713db66a.js.map": "/nort-hikes_react-refresher/static/js/main.713db66a.js.map"
+    "main.css": "/hikes_frontend/static/css/main.44f8b8b5.css",
+    "main.js": "/hikes_frontend/static/js/main.68b8011d.js",
+    "index.html": "/hikes_frontend/index.html",
+    "main.44f8b8b5.css.map": "/hikes_frontend/static/css/main.44f8b8b5.css.map",
+    "main.68b8011d.js.map": "/hikes_frontend/static/js/main.68b8011d.js.map"
   },
   "entrypoints": [
     "static/css/main.44f8b8b5.css",
-    "static/js/main.713db66a.js"
+    "static/js/main.68b8011d.js"
   ]
 }
