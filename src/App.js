@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react'
 
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
-import Nav from 'react-bootstrap/Nav'
-import Navbar from 'react-bootstrap/Navbar'
+
+import NavbarHikes from './Components/NavbarHikes'
 import ListOfHikes from './ListOfHikes'
 
 const url = 'https://liina-matkad-app.onrender.com/api/treks'
@@ -29,15 +29,7 @@ function App() {
 		<>
 			<Container fluid>
 				<Row>
-					<Navbar bg='light' variant='light' className='mb-4'>
-						<Container>
-							<Navbar.Brand href='/'>Matkad</Navbar.Brand>
-							<Nav className='me-auto'>
-								<Nav.Link href='/'>Home</Nav.Link>
-								<Nav.Link href='/'>Kontakt</Nav.Link>
-							</Nav>
-						</Container>
-					</Navbar>
+					<NavbarHikes></NavbarHikes>
 				</Row>
 			</Container>
 			<ListOfHikes hikes={hikes}></ListOfHikes>

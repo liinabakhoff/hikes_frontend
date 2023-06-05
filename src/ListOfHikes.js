@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Card from 'react-bootstrap/Card'
+import HikeCard from './Components/HikeCard'
 
 function ListOfHikes({ hikes }) {
 	return (
@@ -10,22 +10,7 @@ function ListOfHikes({ hikes }) {
 				{hikes.map((hike, index) => {
 					return (
 						<Col key={index}>
-							<Card>
-								<Card.Img variant='top' src={hike.image_url} />
-								<Card.Body>
-									<Card.Title>
-										{hike.name}
-										<br />
-										{hike.start_time} - {hike.end_time}
-									</Card.Title>
-
-									<Card.Text>
-										Lat {hike.latitude} Long {hike.longitude}
-									</Card.Text>
-									<Card.Text>{hike.description}</Card.Text>
-									<Card.Text>Osalus: {hike.price}€</Card.Text>
-								</Card.Body>
-							</Card>
+							<HikeCard hike={hike}></HikeCard>
 						</Col>
 					)
 				})}
