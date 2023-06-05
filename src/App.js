@@ -31,7 +31,10 @@ function App() {
 				<Route path='/' element={<Layout />}>
 					<Route index element={<ListView hikes={hikes}></ListView>}></Route>
 					<Route path='contact' element={<Contact />}></Route>
-					<Route path='trek/:trek_id' element={<DetailView></DetailView>}></Route>
+					<Route
+						path='trek/:hike_id'
+						element={<DetailView hikes={hikes}></DetailView>}
+					></Route>
 				</Route>
 			</Routes>
 		</BrowserRouter>
