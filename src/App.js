@@ -28,11 +28,11 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path='/' element={<Layout />}>
+				<Route path='/nort-hikes_react-refresher/' element={<Layout />}>
 					<Route index element={<ListView hikes={hikes}></ListView>}></Route>
-					<Route path='contact' element={<Contact />}></Route>
+					<Route path='/nort-hikes_react-refresher/contact' element={<Contact />}></Route>
 					<Route
-						path='trek/:hike_id'
+						path='/nort-hikes_react-refresher/trek/:hike_id'
 						element={<DetailView hikes={hikes}></DetailView>}
 					></Route>
 				</Route>
