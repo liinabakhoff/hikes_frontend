@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-
-import NavbarHikes from './Components/NavbarHikes'
-import ListOfHikes from './ListOfHikes'
+import Layout from './Layout'
+import ListView from './pages/ListView'
+import DetailView from './pages/DetailView'
+import Contact from './pages/Contact'
 
 const url = 'https://liina-matkad-app.onrender.com/api/treks'
 
@@ -26,14 +26,15 @@ function App() {
 	}, [])
 
 	return (
-		<>
-			<Container fluid>
-				<Row>
-					<NavbarHikes></NavbarHikes>
-				</Row>
-			</Container>
-			<ListOfHikes hikes={hikes}></ListOfHikes>
-		</>
+		<BrowserRouter>
+			<Routes>
+				<Route path='/' element={<Layout />}>
+					<Route index element={<ListView hikes={hikes}></ListView>}></Route>
+					<Route path='contact' element={<Contact />}></Route>
+					<Route path='trek/:trek_id' element={<DetailView></DetailView>}></Route>
+				</Route>
+			</Routes>
+		</BrowserRouter>
 	)
 }
 

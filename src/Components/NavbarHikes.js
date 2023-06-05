@@ -9,7 +9,7 @@ function NavbarHikes() {
 				<Navbar.Brand href='/'>Matkad</Navbar.Brand>
 				<Nav className='me-auto'>
 					<Nav.Link href='/'>Home</Nav.Link>
-					<Nav.Link href='/'>Kontakt</Nav.Link>
+					<Nav.Link href='/contact'>Kontakt</Nav.Link>
 				</Nav>
 			</Container>
 		</Navbar>
