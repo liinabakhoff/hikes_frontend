@@ -6,10 +6,11 @@ function NavbarHikes() {
 	return (
 		<Navbar bg='light' variant='light' className='mb-4'>
 			<Container>
-				<Navbar.Brand href='/'>Matkad</Navbar.Brand>
+				<Navbar.Brand href='/hikes_frontend'>Matkad</Navbar.Brand>
 				<Nav className='me-auto'>
-					<Nav.Link href='/'>Home</Nav.Link>
-					<Nav.Link href='/contact'>Kontakt</Nav.Link>
+					<Nav.Link href='/hikes_frontend'>Home</Nav.Link>
+					<Nav.Link href='/hikes_frontend/contact'>Kontakt</Nav.Link>
+					<Nav.Link href='/hikes_frontend/admin'>Admin</Nav.Link>
 				</Nav>
 			</Container>
 		</Navbar>

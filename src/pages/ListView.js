@@ -9,7 +9,7 @@ function ListOfHikes({ hikes }) {
 	}
 
 	return (
-		<Container className='mb-5'>
+		<Container id='listView' className='mb-5'>
 			<Row xs={1} md={2} lg={3} className='g-4'>
 				{hikes.map((hike, index) => {
 					return (

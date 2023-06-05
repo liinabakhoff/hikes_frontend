@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 function HikeCard({ hike }) {
 	return (
 		<Card>
-			<Link to={'/trek/' + hike.id} hike={hike}>
+			<Link to={'/hikes_frontend/trek/' + hike.id} hike={hike}>
 				<Card.Img variant='top' src={hike.image_url} />
 				<Card.Body>
 					<Card.Title>

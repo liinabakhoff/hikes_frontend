@@ -1,8 +1,8 @@
 {
-	"name": "react-refresh",
+	"name": "hikes_frontend",
 	"version": "0.1.0",
 	"private": false,
-	"homepage": "http://liinabakhoff.github.io/nort-hikes_react-refresher",
+	"homepage": "http://liinabakhoff.github.io/hikes_frontend",
 	"dependencies": {
 		"bootstrap": "^5.2.3",
 		"react": "^18.2.0",

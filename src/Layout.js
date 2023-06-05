@@ -11,7 +11,11 @@ function Layout() {
 					<NavbarHikes></NavbarHikes>
 				</Row>
 			</Container>
-			<Outlet />
+			<Container>
+				<Row>
+					<Outlet />
+				</Row>
+			</Container>
 		</>
 	)
 }
