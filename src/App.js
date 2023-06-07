@@ -4,13 +4,15 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Layout from './Layout'
 import ListView from './pages/ListView'
 import DetailView from './pages/DetailView'
+import EditDetailView from './pages/EditDetailView'
 import Contact from './pages/Contact'
-import Admin from './pages/Admin'
 
 const url = 'https://liina-matkad-app.onrender.com/api/treks'
+//const url = 'http://localhost:10000/api/treks'
 
 function App() {
 	const [hikes, setHikes] = useState([])
+	const [isAdmin, setIsAdmin] = useState(true)
 
 	useEffect(() => {
 		fetch(url)
@@ -36,7 +38,10 @@ function App() {
 						path='/hikes_frontend/trek/:hike_id'
 						element={<DetailView hikes={hikes}></DetailView>}
 					></Route>
-					<Route path='/hikes_frontend/admin' element={<Admin hikes={hikes} />}></Route>
+					<Route
+						path='/hikes_frontend/trek/:hike_id/edit'
+						element={<EditDetailView hikes={hikes}></EditDetailView>}
+					></Route>
 				</Route>
 			</Routes>
 		</BrowserRouter>

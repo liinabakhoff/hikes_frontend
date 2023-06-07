@@ -1,5 +1,12 @@
-#listView {
-	/*margin-left: -1.5rem;
-	margin-right: -1.5rem;
-	*/
+.hike-card {
+	cursor: pointer;
+}
+
+.hike-card:hover,
+.hike-card:active,
+.hike-card:focus {
+	border-color: darkgray;
+	box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.1);
 }

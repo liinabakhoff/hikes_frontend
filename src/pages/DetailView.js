@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 
 function DetailView({ hikes }) {
 	const { hike_id } = useParams()
@@ -11,8 +11,20 @@ function DetailView({ hikes }) {
 	}
 	return (
 		<div>
-			Näitan matka id-ga <b>{hike_id}</b>
-			<h1>{hike?.name}</h1>
+			<div className='admin-only d-flex justify-content-end'>
+				<Link to='./edit'>Edit</Link>
+			</div>
+			<h1>{hike.name}</h1>
+			<p>
+				Algus: {hike.start_time}
+				<br />
+				Lõpp: {hike.end_time}
+			</p>
+			<p>{hike.description}</p>
+			<p>
+				{hike.latitude}, {hike.longitude}
+			</p>
+			<p>Hind: {hike.price}</p>
 		</div>
 	)
 }

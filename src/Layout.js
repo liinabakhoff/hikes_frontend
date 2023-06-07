@@ -11,10 +11,8 @@ function Layout() {
 					<NavbarHikes></NavbarHikes>
 				</Row>
 			</Container>
-			<Container>
-				<Row>
-					<Outlet />
-				</Row>
+			<Container className='min-vh-100'>
+				<Outlet />
 			</Container>
 		</>
 	)
