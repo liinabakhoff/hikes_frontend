@@ -1,3 +1,8 @@
+html,
+body {
+	background-color: #f5f5f5;
+}
+
 .hike-card {
 	cursor: pointer;
 }

@@ -22,6 +22,12 @@ function NavbarHikes() {
 					>
 						Contact
 					</Link>
+					<Link
+						className='text-decoration-none text-secondary mx-2'
+						to='/hikes_frontend/admin/new'
+					>
+						Admin
+					</Link>
 				</Nav>
 			</Container>
 		</Navbar>

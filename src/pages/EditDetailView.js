@@ -1,6 +1,7 @@
 import Form from 'react-bootstrap/Form'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Button from 'react-bootstrap/Button'
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
 
@@ -37,6 +38,10 @@ function EditDetailView({ hikes }) {
 	const handleTextInputChange = (event) => {
 		handleSetEditedHike(event.target.name, event.target.value)
 	}
+
+	const handleSubmit = (event) => {}
+
+	//const isAnyInputEmpty = () => {}
 
 	return (
 		<Form>
@@ -103,6 +108,21 @@ function EditDetailView({ hikes }) {
 					onChange={handleTextInputChange}
 				/>
 			</Form.Group>
+
+			<Form.Group className='mb-3'>
+				<Form.Label>Description</Form.Label>
+				<Form.Control
+					as='textarea'
+					rows={3}
+					name='description'
+					value={editedHike.description}
+					onChange={handleTextInputChange}
+				/>
+			</Form.Group>
+
+			<Button variant='primary' type='submit' onClick={handleSubmit}>
+				Submit
+			</Button>
 		</Form>
 	)
 }

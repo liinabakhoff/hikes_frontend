@@ -1,0 +1,64 @@
+#admin {
+	/*  56px = navbar height */
+	/* 1.5rem margin under navbar */
+	/* height: calc(100vh - 56px - 1.5rem); */
+	display: grid;
+	grid-template-columns: [sidebar] 300px [content] auto;
+	gap: 1.5rem;
+}
+
+/**** ADMIN SIDEBAR ****/
+
+#admin-navigation,
+#admin-sidebar #add-new-hike-button {
+	background-color: white;
+	border-radius: 6px;
+}
+
+#admin-navigation {
+	padding: 0;
+}
+
+#admin-sidebar li.list-item {
+	list-style: none;
+	padding: 0.5rem 1.5rem;
+	cursor: pointer;
+}
+
+#admin-sidebar li.list-item:hover,
+#admin-sidebar #add-new-hike-button:hover {
+	background-color: rgba(127, 255, 212, 0.2);
+}
+
+#admin-sidebar li.list-item.active,
+#admin-sidebar #add-new-hike-button.active {
+	background-color: rgba(127, 255, 212, 0.4);
+}
+
+#admin-sidebar li.list-item:first-child {
+	padding-top: 1rem;
+}
+
+#admin-sidebar li.list-item:last-child {
+	padding-bottom: 1rem;
+}
+
+#admin-sidebar #add-new-hike-button {
+	padding: 1rem 1.5rem;
+	cursor: pointer;
+}
+
+/**** ADMIN MAIN ****/
+
+#admin main {
+	background-color: white;
+	border-radius: 5px;
+}
+
+#admin .actions button {
+	margin-right: 1rem;
+}
+
+#admin .actions button:last-of-type {
+	margin-right: 0;
+}

@@ -1,8 +1,12 @@
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import HikeCard from '../Components/HikeCard'
+import { useContext } from 'react'
+import { AppContext } from '../App'
 
-function ListOfHikes({ hikes }) {
+function ListOfHikes() {
+	const { hikes } = useContext(AppContext)
+
 	if (hikes?.length < 1) {
 		return <> Laen postitusi</>
 	}
