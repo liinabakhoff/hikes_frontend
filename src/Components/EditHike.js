@@ -68,6 +68,14 @@ function EditHike({ activeListItem, handleListItemChange, url }) {
 			})
 			handleListItemChange(newHikeId)
 			setEditedHike(initialState)
+			setAlert((prevState) => {
+				return {
+					...prevState,
+					show: true,
+					alertStyle: 'success',
+					text: `${editedHike.name} succesfully saved`,
+				}
+			})
 		} catch (error) {
 			console.error('Error:', error)
 		}
@@ -91,6 +99,14 @@ function EditHike({ activeListItem, handleListItemChange, url }) {
 						return hike
 					}
 				})
+			})
+			setAlert((prevState) => {
+				return {
+					...prevState,
+					show: true,
+					alertStyle: 'success',
+					text: `${editedHike.name} succesfully saved`,
+				}
 			})
 		} catch (error) {
 			console.error('Error:', error)
