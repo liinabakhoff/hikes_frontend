@@ -230,7 +230,9 @@ function EditHike({ activeListItem, handleListItemChange, url }) {
 					<Button variant='outline-danger' onClick={deleteHike}>
 						Kustuta
 					</Button>
-					<Button variant='outline-secondary'>Tühista muudatused</Button>
+					{
+						//<Button variant='outline-secondary'>Tühista muudatused</Button>
+					}
 					<Button variant='outline-primary' type='submit'>
 						Save
 					</Button>
