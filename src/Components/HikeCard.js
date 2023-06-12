@@ -23,7 +23,7 @@ function HikeCard({ hike }) {
 					Lat {hike.latitude} Long {hike.longitude}
 				</Card.Text>
 				<Card.Text>{hike.description}</Card.Text>
-				<Card.Text>Osalus: {hike.price}€</Card.Text>
+				<Card.Text>Osalus: {hike.price}</Card.Text>
 			</Card.Body>
 		</Card>
 	)
